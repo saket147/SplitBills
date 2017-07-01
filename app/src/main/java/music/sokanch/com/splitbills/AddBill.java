@@ -14,6 +14,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -50,17 +51,22 @@ public class AddBill extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String shareHolderName =spinner.getSelectedItem().toString();
-                int amount = Integer.parseInt(enterAmount.getText().toString());
-                if (checkBox.isChecked()){
-                    Log.d("Inside checkbox","Checked");
-                    Bills bill = new Bills(shareHolderName, amount,0);
-                    databaseHelper.insertContact(bill);
-                }
-                else {
+                try {
+                    String shareHolderName =spinner.getSelectedItem().toString();
+                    int amount = Integer.parseInt(enterAmount.getText().toString());
+                    if (checkBox.isChecked()){
+                        Log.d("Inside checkbox","Checked");
+                        Bills bill = new Bills(shareHolderName, amount,0);
+                        databaseHelper.insertContact(bill);
+                    }
+                    else {
 
-                    Log.d("Inside checkbox"," not Checked");
-                    databaseHelper.insertContact(new Bills(shareHolderName, amount, 1));
+                        Log.d("Inside checkbox"," not Checked");
+                        databaseHelper.insertContact(new Bills(shareHolderName, amount, 1));
+                    }
+                }catch (Exception ex){
+                    ex.printStackTrace();
+                    Toast.makeText(AddBill.this, "You Need to enter Bill Details", Toast.LENGTH_SHORT).show();
                 }
                 Intent intent = new Intent(AddBill.this,MainActivity.class);
                 startActivity(intent);

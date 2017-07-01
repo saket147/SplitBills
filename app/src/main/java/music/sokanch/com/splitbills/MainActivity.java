@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
     SQLiteDatabase sqLiteDatabase, database;
     private String query = "select * from bill_info";
     private Bills bills;
+
     //BA means B gave A
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -152,6 +154,6 @@ public class MainActivity extends AppCompatActivity {
         }
         you_owe.setText("you owe " +owe);
         you_get.setText("you will get " +get);
-        total.setText("Total balance " +(owe-get));
+        total.setText("Total balance  :    " + (get-owe));
     }
 }

@@ -34,7 +34,7 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/saket
 	android:allowBackup
 		ADDED from /home/saket/SplitBills/app/src/main/AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /home/saket/SplitBills/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/saket/SplitBills/app/src/main/AndroidManifest.xml:7:9-36
 	android:theme
 		ADDED from /home/saket/SplitBills/app/src/main/AndroidManifest.xml:11:9-40
 activity#music.sokanch.com.splitbills.MainActivity

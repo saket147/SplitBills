@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/saket/SplitBills/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/bill.png",
+        "source": "/home/saket/SplitBills/app/src/main/res/mipmap-xxxhdpi/bill.png"
+    },
+    {
         "merged": "/home/saket/SplitBills/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
         "source": "/home/saket/SplitBills/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },

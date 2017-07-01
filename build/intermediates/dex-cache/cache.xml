@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="bd61987f6de28aea1aefd01ef0e89cbbf9b66477">
+        sha1="c298e39c6e6b64bbe6ff08a00510c1f4c5063c51">
         <dex dex="/home/saket/SplitBills/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_47bc3cea646f033600867f12a8844b37d0212df1/classes.dex" />
     </item>
 

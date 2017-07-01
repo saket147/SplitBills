@@ -55,7 +55,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     public ArrayList<Bills> getDetails(){
 
-        Log.d("Cursor ","fuck u");
+        Log.d("Cursor ","Data");
         ArrayList<Bills> billsList = new ArrayList<>();
         String selectQuery = "SELECT * FROM " + TABLE_BILLS;
         SQLiteDatabase db  = this.getReadableDatabase();

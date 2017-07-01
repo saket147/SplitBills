@@ -19,6 +19,14 @@ public final class R {
         public static final int abc_slide_in_top=0x7f050007;
         public static final int abc_slide_out_bottom=0x7f050008;
         public static final int abc_slide_out_top=0x7f050009;
+        public static final int push_down_in=0x7f05000a;
+        public static final int push_down_out=0x7f05000b;
+        public static final int push_up_in=0x7f05000c;
+        public static final int push_up_out=0x7f05000d;
+        public static final int slide_in_left=0x7f05000e;
+        public static final int slide_in_right=0x7f05000f;
+        public static final int slide_out_left=0x7f050010;
+        public static final int slide_out_right=0x7f050011;
     }
     public static final class array {
         public static final int array_name=0x7f0b0000;

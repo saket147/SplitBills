@@ -156,4 +156,8 @@ public class MainActivity extends AppCompatActivity {
         you_get.setText("you will get " +get);
         total.setText("Total balance  :    " + (get-owe));
     }
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);    }
 }
